@@ -3,8 +3,7 @@ let currentNumber = "";  // Det aktuelle tal, brugeren indtaster.
 let previousNumber = ""; // Gemmer det forrige tal, hvis en operator vælges.
 let currentOperator = ""; // Gemmer den aktuelle operator (+ eller -).
 let displayText = ""; // Holder styr på det, der vises på "skærmen".
-
-
+//
 
 function setup() {
     createCanvas(400, 400); // Opretter en 400x400 flade.
