@@ -6,7 +6,7 @@ let newCalculation = false; // Hvis true, starter en ny beregning
 
 // setup() - Opretter lommeregnerens knapper
 function setup() {
-    createCanvas(400, 400); // Opretter en 400x400 flade.
+    createCanvas(400, 400); // Baggrund 
 
     // Opretter tal-knapperne (0-9)
     let button = createButton(1);
@@ -75,7 +75,7 @@ function draw() {
 
     // Tegner et display-rektangel som "skærm"
     fill(255);
-    rect(50, 20, 200, 40, 5);
+    rect(50, 0, 200, 40, 5);
 
     // Viser enten resultatet eller den aktuelle beregning
     fill(0);
@@ -83,9 +83,9 @@ function draw() {
     textAlign(RIGHT, CENTER);
 
     if (result !== null && currentOperator === null && currentNumber === 0) {
-        text(result, 240, 40); // Viser kun resultatet
+        text(result, 240, 20); // Viser kun resultatet
     } else {
-        text((result !== null ? result : "") + " " + (currentOperator || "") + " " + (currentNumber !== 0 ? currentNumber : ""), 240, 40);
+        text((result !== null ? result : "") + " " + (currentOperator || "") + " " + (currentNumber !== 0 ? currentNumber : ""), 240, 20);
     }
 }
 
